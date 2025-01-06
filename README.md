@@ -38,7 +38,7 @@ module.exports = {
 ```
 
 - Edit tsconfig.json file
-  | The current version of Vite splits TypeScript configuration into three files, two of which need to be edited. Add the baseUrl and paths properties to the compilerOptions section of the tsconfig.json and tsconfig.app.json files:
+> The current version of Vite splits TypeScript configuration into three files, two of which need to be edited. Add the baseUrl and paths properties to the compilerOptions section of the tsconfig.json and tsconfig.app.json files:
 
 ```sh
 {
@@ -61,7 +61,7 @@ module.exports = {
 ```
 
 - Edit tsconfig.app.json file
-  Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:
+> Add the following code to the tsconfig.app.json file to resolve paths, for your IDE:
 
 ```sh
 {
@@ -79,7 +79,7 @@ module.exports = {
 ```
 
 - Update vite.config.ts
-  Add the following code to the vite.config.ts so your app can resolve paths without error:
+> Add the following code to the vite.config.ts so your app can resolve paths without error:
 
 ```sh
 bun add -D @types/node
@@ -101,14 +101,14 @@ export default defineConfig({
 ```
 
 - Run the CLI
-  Run the shadcn-ui init command to setup your project:
+> Run the shadcn-ui init command to setup your project:
 
 ```sh
 bunx --bun shadcn@latest init
 ```
 
 - Configure components.json
-  You will be asked a few questions to configure components.json:
+> You will be asked a few questions to configure components.json:
 
 ```sh
 Which style would you like to use? › New York
@@ -117,7 +117,7 @@ Do you want to use CSS variables for colors? › no / yes
 ```
 
 - That's it
-  You can now start adding components to your project.
+> You can now start adding components to your project.
 
 ```sh
 bunx --bun shadcn@latest add button
